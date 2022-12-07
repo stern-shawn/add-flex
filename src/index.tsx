@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import * as Flex from '@twilio/flex-ui';
-import { Router, Route, RouteComponentProps, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 const root = ReactDOM.createRoot(
@@ -12,9 +12,9 @@ const history = createBrowserHistory();
 
 // @ts-ignore
 Flex.Manager.create({
-  router: {
-    type: 'browser',
-  },
+  // router: {
+  //   type: 'browser',
+  // },
 }).then((manager) => {
   root.render(
     <Router history={history}>
